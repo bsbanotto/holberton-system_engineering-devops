@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -admX
+ls -a -d -m -X -p --sort=WORD
