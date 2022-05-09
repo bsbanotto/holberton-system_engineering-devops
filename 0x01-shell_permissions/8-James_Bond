@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u-wrx,g-wrx,o+wrx hello
+chmod 007 hello
