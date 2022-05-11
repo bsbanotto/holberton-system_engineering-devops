@@ -3,4 +3,4 @@
 # Second arg = sort the cat list
 # Third arg = return everything up to the first :
 # Fourth arg = return everything after the first :/ to the next :
-cat /etc/passwd | sort | grep -Eo '^[^:]+' | grep -Eo '(?<=:/).*(?=:)'
+cat /etc/passwd | sort | grep -Eo '^[^:]+'|'(?<=:/).*?(?=:)'
