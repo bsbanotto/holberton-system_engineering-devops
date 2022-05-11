@@ -1,6 +1,6 @@
 #!/bin/bash
-#Fist arg = cat to pull in the text
-#Second arg = return everything up to the first :
-#Third arg = return everything after the first :/ to the next :
-cat /etc/passwd | egrep -o '^[^:]+' | egrep -o -P '(?<=:/).*(?=:)'
-
+# Fist arg = cat to pull in the text
+# Second arg = sort the cat list
+# Third arg = return everything up to the first :
+# Fourth arg = return everything after the first :/ to the next :
+cat /etc/passwd | sort | grep -Eo '^[^:]+' | grep -Eo '(?<=:/).*(?=:)'
