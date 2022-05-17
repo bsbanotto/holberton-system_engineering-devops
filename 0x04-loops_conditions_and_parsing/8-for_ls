@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-LIST=$(ls)
-for i in $LIST
+for i in $(ls)
 do
     echo "$i" | cut -d- -f2
 done
