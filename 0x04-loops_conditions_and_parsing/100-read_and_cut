@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#This script returns certain fields in the /etc/passwd file
 while read -r;
 do
     cut -d: -f1,3,6 ;

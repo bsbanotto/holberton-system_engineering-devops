@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#This script shows a really clunky clock
 hour=0
 minute=1
 while ((hour < 13))
