@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#Task 4. Create an infinite loop with a sleep 2 between each loop
+#Task 5. Stop an infinite loop
 DIE=$(pgrep -f 'infinity')
-kill $DIE
+kill "$DIE"
