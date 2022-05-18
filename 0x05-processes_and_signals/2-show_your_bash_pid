@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Task 0. What is my PID. This script dieplays it's own PID
+# shellcheck disable=SC2009
+ps axu | less | grep 'bash$'
