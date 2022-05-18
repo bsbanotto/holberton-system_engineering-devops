@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
 #Task 4. Create an infinite loop with a sleep 2 between each loop
-i=1
-while ((i > 0))
-do
-    echo "To infinity and beyond"
-    sleep 2
-    i=$((i + 1))
-done
+DIE=$(pgrep -f 'infinity')
+kill $DIE
